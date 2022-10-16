@@ -164,6 +164,19 @@ a:active {
   }
 } */
 
+.linkscard_div ul .Download-Button a{
+  background-color: transparent;
+  border: none;
+  color: #ffce76;
+  text-decoration: underline;
+}
+.linkscard_div ul .Download-Button a img{
+  background-color: #ffce76;
+}
+
+
+
+
 @media (max-width: 500px) {
   .profile_card_div{
     flex:0;

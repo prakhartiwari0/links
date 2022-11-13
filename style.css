@@ -180,7 +180,8 @@ a:active {
 }
 
 
-.attribution{
+.attribution a{
+  padding: .3em 0em;
   color: #ffce76;
 }
 

@@ -96,12 +96,17 @@ body {
   letter-spacing: 0.09em;
 }
 .whoami_div .textinfo .profession {
+  margin: 0.5em 0em;
   letter-spacing: 0.09em;
   font-size: 0.8em;
   opacity: 0.5;
 }
 .whoami_div .textinfo .profession:hover {
   opacity: 1;
+}
+.whoami_div .textinfo .email-address a{
+  color:#ffce76;
+
 }
 
 /* -----------------------------------------  */

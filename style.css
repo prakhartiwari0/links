@@ -24,17 +24,6 @@ body {
   );
 }
 
-.art1 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-.art2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 28em;
-}
 /* -----------------------------------------  */
 .profile_card_div {
   flex: 0.8;
@@ -169,7 +158,7 @@ a:active {
   }
 } */
 
-.linkscard_div ul .Download-Button a{
+/* .linkscard_div ul .Download-Button a{
   background-color: transparent;
   border: none;
   color: #ffce76;
@@ -177,7 +166,7 @@ a:active {
 }
 .linkscard_div ul .Download-Button a img{
   background-color: #ffce76;
-}
+} */
 
 
 .attribution a{

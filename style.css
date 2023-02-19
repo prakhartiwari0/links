@@ -5,9 +5,15 @@
   padding: 0px;
   box-sizing: border-box;
 }
+:root{
+  --yellow : #ffce76;
+}
+
 ::selection {
-  color: #ffce76;
-  background-color: #1d1919;
+  /* color: var(--yellow); */
+  color: white;
+  /* background-color: #00769d; */
+  background-color: black;
 }
 
 body {
@@ -49,6 +55,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 18em;
+  user-select: none ;
+  cursor: pointer;
 }
 .whoami_div .profilepic_div .profilepic {
   border: #ffcf765f 5px solid;
@@ -64,13 +72,13 @@ body {
 }
 .whoami_div .profilepic_div .profilepic:hover {
   filter: grayscale(0%);
-  border: #ffce76 5px solid;
+  border: var(--yellow) 5px solid;
   border-top: none;
 }
 
 .whoami_div .textinfo {
   text-align: center;
-  color: #ffce76;
+  color: var(--yellow);
   margin: 1em 0em;
   margin-bottom: 2em;
 }
@@ -94,9 +102,58 @@ body {
   opacity: 1;
 }
 .whoami_div .textinfo .email-address a{
-  color:#ffce76;
+  color:var(--yellow);
 
 }
+
+
+/* ----------------- OVERLAY ABOUT ---------------------  */
+.overlay_div{
+  position:fixed;
+  padding:0;
+  margin:0;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  
+  /* display: flex; */
+  display: none;
+}
+
+.about_div{
+  color: var(--yellow);
+  width: min(calc(100vw - 2rem), 50rem);
+  background-color: black;
+  /* display: flex; */
+  text-align: left;
+  padding: 1rem calc(1rem);
+}
+.close_about_button{
+  cursor: pointer;
+  font-size: 4rem;
+  color: var(--yellow);
+  background-color: transparent;
+  border: none;
+  /* justify-self: right; */
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  /* left: 99%; */
+  user-select: none;
+}
+.close_about_button:active{
+  transform: scale(0.8);
+}
+
+
+
+
+
+
 
 /* -----------------------------------------  */
 
@@ -106,8 +163,8 @@ body {
   margin-bottom: 5em;
   padding: 2em 4em;
   border-radius: 2em;
-  border-left: #ffce76 2px solid;
-  border-right: #ffce76 2px solid;
+  border-left: var(--yellow) 2px solid;
+  border-right: var(--yellow) 2px solid;
 }
 
 .linkscard_div ul {
@@ -123,7 +180,7 @@ body {
 
 }
 .linkscard_div ul a {
-  background-color: #ffce76;
+  background-color: var(--yellow);
   text-decoration: none;
   width: 100%;
   color: #1d1919;
@@ -132,15 +189,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: #ffce76 2px solid;
+  border: var(--yellow) 2px solid;
   font-weight: 900;
   transition: 0.2s ease;
 }
 .linkscard_div ul a:hover,
 a:active {
-  border: #ffce76 2px solid;
+  border: var(--yellow) 2px solid;
   background-color: #1d1919;
-  color: #ffce76;
+  color: var(--yellow);
 }
 
 .linkscard_div ul a img {
@@ -149,7 +206,7 @@ a:active {
   width: 1.5em;
 }
 .linkscard_div ul a:hover img {
-  background-color: #ffce76;
+  background-color: var(--yellow);
 }
 
 /* @media (max-width: 315px) {
@@ -161,17 +218,17 @@ a:active {
 /* .linkscard_div ul .Download-Button a{
   background-color: transparent;
   border: none;
-  color: #ffce76;
+  color: var(--yellow);
   text-decoration: underline;
 }
 .linkscard_div ul .Download-Button a img{
-  background-color: #ffce76;
+  background-color: var(--yellow);
 } */
 
 
 .attribution a{
   padding: .3em 0em;
-  color: #ffce76;
+  color: var(--yellow);
 }
 
 

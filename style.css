@@ -247,26 +247,25 @@ a:active {
   background-color: var(--yellow);
 }
 
-/* @media (max-width: 315px) {
-  body {
-    font-size: 0.9em;
-  }
-} */
 
-/* .linkscard_div ul .Download-Button a{
-  background-color: transparent;
-  border: none;
-  color: var(--yellow);
-  text-decoration: underline;
+.attribution{
+  margin:2rem;
+  border-bottom: 2px solid var(--yellow);
+  opacity: 0.7;
+
 }
-.linkscard_div ul .Download-Button a img{
-  background-color: var(--yellow);
-} */
-
-
 .attribution a{
-  padding: .3em 0em;
+  text-decoration: none;
+  /* padding: 1rem; */
   color: var(--yellow);
+}
+.attribution:hover{
+  opacity: 1;
+}
+  
+.attribution a:active, .attribution a:focus{
+    outline: none;
+    border: none;
 }
 
 
@@ -289,16 +288,12 @@ a:active {
 
 }
 @media (max-width: 800px) {
-  /* .profile_card_div{
-    flex:0.8;
-  } */
   .linkscard_div{
   padding: 0em 0em;
   border: none;
 }
 .linkscard_div ul a {
   border: #1d1919 2px solid;
-  /* border-radius: 0em; */
 }
 .list-item {
   margin: 0.2em 0em;

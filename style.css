@@ -63,9 +63,11 @@ body {
 
 .whoami_div .profilepic_div .clickherespan {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 1rem;
+  right: -2rem;
   font-size: 1rem;
+  color: var(--yellow);
+  transform: rotate(20deg);
 }
 
 .whoami_div .profilepic_div .profilepic {

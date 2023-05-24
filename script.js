@@ -8,6 +8,10 @@ const profilepic = document.querySelector('.profilepic')
 const close_about_button = document.querySelector('.close_about_button')
 
 const overlay_div = document.querySelector('.overlay_div')
+const clickherechangingpart = document.querySelector('.clickherechangingpart')
+const clickherespan = document.querySelector('.clickherespan')
+
+
 
 
 let pic_no = 1
@@ -17,9 +21,11 @@ let pic_no = 1
 profilepic_div.addEventListener('click', (e) => {
     if (pic_no==1){
         pic_no = 2
+        clickherechangingpart.textContent = "again"
     }
     else if (pic_no==2){
         pic_no =3
+        clickherespan.textContent = ""
     } 
     else if (pic_no==3){
         pic_no = 1

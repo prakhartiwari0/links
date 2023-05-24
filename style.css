@@ -58,7 +58,16 @@ body {
   width: 18em;
   user-select: none ;
   cursor: pointer;
+  position: relative;
 }
+
+.whoami_div .profilepic_div .clickherespan {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1rem;
+}
+
 .whoami_div .profilepic_div .profilepic {
   border: #ffcf765f 5px solid;
   padding: 0.5em 0.5em;

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+
 
 * {
   margin: 0px;
@@ -12,9 +14,9 @@
 
 ::selection {
   /* color: var(--yellow); */
-  color: white;
+  color: black;
   /* background-color: #00769d; */
-  background-color: black;
+  background-color: var(--yellow);
 }
 
 body {
@@ -119,45 +121,69 @@ body {
 }
 
 
-/* ----------------- OVERLAY ABOUT ---------------------  */
-.overlay_div{
-  position:fixed;
-  padding:0;
-  margin:0;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 100%;
-  background:rgba(0, 0, 0, 0.5);
-  align-items: center;
-  justify-content: center;
-  
-  /* display: flex; */
-  display: none;
+/* ----------------- ABOUT DIV ---------------------  */
+
+.about_div::backdrop{
+  background:rgba(0, 0, 0, 0.9);
+
 }
 
-.about_div{
+.about_div {
   color: var(--yellow);
   width: min(calc(100vw - 2rem), 50rem);
   background-color: black;
-  /* display: flex; */
   text-align: left;
-  padding: 1rem calc(1rem);
+  padding: 2.5rem;
+  margin: auto;
+  position: fixed;
+  border-radius: 1rem;
+  border: none;
+  animation: moving_Box_Shadow 10s infinite linear;
+  will-change: transform, box-shadow;
+}
+
+@keyframes moving_Box_Shadow {
+  0% {
+    transform: translate(-5px, 0);
+    box-shadow: -5px 0px 15px var(--yellow);
+  }
+  25% {
+    transform: translate(0, -5px);
+    box-shadow: 0px -5px 10px var(--yellow);
+  }
+  50% {
+    transform: translate(5px, 0);
+    box-shadow: 5px 0px 10px var(--yellow);
+  }
+  75% {
+    transform: translate(0, 5px);
+    box-shadow: 0px 5px 10px var(--yellow);
+  }
+  100% {
+    transform: translate(-5px, 0);
+    box-shadow: -5px 0px 10px var(--yellow);
+  }
+}
+
+.about_div:focus{
+  border: none;
+  outline: none;
 }
 .close_about_button{
   cursor: pointer;
-  font-size: 4rem;
+  font-size: 2rem;
   color: var(--yellow);
   background-color: transparent;
   border: none;
-  /* justify-self: right; */
   position: absolute;
-  right: 1rem;
-  top: 1rem;
-  /* left: 99%; */
+  right: .5rem;
+  top: .5rem;
+  /* padding: .5rem; */
   user-select: none;
+  border-radius: 100%;
 }
-.close_about_button:active{
+.close_about_button:active, .close_about_button:focus{
+  outline: 1px solid var(--yellow);
   transform: scale(0.8);
 }
 
